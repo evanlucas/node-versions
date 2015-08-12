@@ -1,0 +1,31 @@
+{
+  "name": "node-versions",
+  "version": "1.0.0",
+  "description": "Simple package to get list of all node versions (including iojs)",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/test.js --cov"
+  },
+  "dependencies": {
+    "help": "~2.1.0",
+    "iojs-versions": "~1.0.0",
+    "node-legacy-versions": "~1.0.0",
+    "nopt": "~3.0.3"
+  },
+  "devDependencies": {
+    "tap": "~1.3.2"
+  },
+  "license": "MIT",
+  "bin": {
+    "node-versions": "./bin/cmd.js"
+  },
+  "author": "Evan Lucas <evanlucas@me.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanlucas/node-versions"
+  },
+  "homepage": "https://github.com/evanlucas/node-versions",
+  "bugs": {
+    "url": "https://github.com/evanlucas/node-versions/issues"
+  }
+}

@@ -1,0 +1,9 @@
+node-versions - Simple package to get list of all node versions (including iojs)
+
+  usage: node-versions [options]
+
+  options:
+    -h, --help                    show help and usage
+    -v, --version                 show version
+    -j, --json                    output as json
+    -p, --pretty                  pretty print json
