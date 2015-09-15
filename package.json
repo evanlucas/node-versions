@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "help": "~2.1.0",
-    "iojs-versions": "~1.0.3",
+    "iojs-versions": "~1.0.4",
     "node-legacy-versions": "~1.0.0",
     "nopt": "~3.0.3"
   },
