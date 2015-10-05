@@ -1,6 +1,6 @@
 {
   "name": "node-versions",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Simple package to get list of all node versions (including iojs)",
   "main": "index.js",
   "scripts": {
