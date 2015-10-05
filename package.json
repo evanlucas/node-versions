@@ -4,7 +4,9 @@
   "description": "Simple package to get list of all node versions (including iojs)",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/test.js --cov"
+    "test": "tap test/test.js --cov",
+    "fetch": "./scripts/fetch.sh",
+    "update": "./scripts/fetch.sh | ./scripts/update.js"
   },
   "dependencies": {
     "help": "~2.1.0",
