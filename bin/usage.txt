@@ -7,3 +7,5 @@ node-versions - Simple package to get list of all node versions (including iojs)
     -v, --version                 show version
     -j, --json                    output as json
     -p, --pretty                  pretty print json
+    --lts                         print latest LTS version
+    --latest                      print latest version

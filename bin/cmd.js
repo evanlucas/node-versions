@@ -7,6 +7,8 @@ var nopt = require('nopt')
                 , version: Boolean
                 , json: Boolean
                 , pretty: Boolean
+                , latest: Boolean
+                , lts: Boolean
                 }
   , shortHand = { h: ['--help']
                 , v: ['--version']
@@ -18,12 +20,26 @@ var nopt = require('nopt')
   , pkg = require('../package')
   , versions = require('../')
 
+var LTS_MAJOR = '4'
+
 if (parsed.help) {
   return help()
 }
 
 if (parsed.version) {
   console.log('node-versions', 'v' + pkg.version)
+  return
+}
+
+if (parsed.lts) {
+  console.log(versions.filter(function(v) {
+    return v.split('.')[0] === LTS_MAJOR
+  }).reverse()[0])
+  return
+}
+
+if (parsed.latest) {
+  console.log(versions[versions.length - 1])
   return
 }
 
